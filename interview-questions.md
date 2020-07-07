@@ -18,7 +18,7 @@ d) Reduces the size of the code, duplicate set of statements are replaced by fun
 
 2. What is the difference between map and filter?
 
-  Your answer: Map iterates through an array, will do what you want to it, and return an array of values of the same size. But a filter will iterate through an array an, filter it how you tell it to, and return values that only meet your conditions.
+  Your answer: Map iterates through an array, perform the user defined operation on each element in the array, and return a new array of the same size. But a filter will iterate through an array an, filter the values that meet the user defined conditions, perform the user defined operation on those values, and return values that only meet your conditions.
 
   Researched answer: Map returns a new array of elements where you have applied some function on the element so that it changes the original element (typically). Filter will only return elements where the function you specify returns a value of true for each element passed to the function. (https://forum.freecodecamp.org/t/the-difference-between-map-and-filter/277659)
 
@@ -26,7 +26,7 @@ d) Reduces the size of the code, duplicate set of statements are replaced by fun
 
 3. What is the difference between map/filter and a for loop?
 
-  Your answer: A map/filter is a higher order function that is built in to Javascript. Map/filter essentially does the same thing as a for-loop but it's more efficient and defined. A for-loop is defined by the user for both input and output.
+  Your answer: A map/filter is a higher order function that is built in to Javascript. Map/filter essentially does the same thing as a for-loop but it's more efficient and defined. A map/filter can only be used on an array, while a for loop could be used on different datasets. A for-loop is defined by the user for both input datatype, the number of iterations, items to iterate, and the retrun output.
 
   Researched answer: The big difference is that the conditions for iteration are handled for us. We’re guaranteed to get every element of the array in the right order. We don’t have to manage our own index variable or condition for that variable. Map/filter also provides the benefit of immutability, creating a new array and leaves our original array alone (https://medium.com/@ExplosionPills/map-vs-for-loop-2b4ce659fb03)
 
@@ -34,7 +34,7 @@ d) Reduces the size of the code, duplicate set of statements are replaced by fun
 
 4. What is the difference between console.log() and return?
 
-  Your answer: Console.log() just displays to the screen what you tell it to. Return is used at the end of function to define what the output or result of the function is.
+  Your answer: Console.log() just displays to the console what you tell it to. Return is used at the end of function to define what the output or result of the function is.
 
   Researched answer: console. log() - logs out information in console. return just return from the function without processing further code or you can say, A function immediately stops at the point where return is called. (https://stackoverflow.com/questions/21020608/difference-between-console-log-and-return-in-javascript)
 

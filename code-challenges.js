@@ -86,8 +86,7 @@ var coffeeRun = ["Vanilla latte", "Chai tea", "Black coffee", "Mocha", "American
 //define a function that accepts an array
 const oddIndexOnly = (array) => {
     // return an array with only odd indexes using filter and modulo 2
-    return array.filter((value, index) => index % 2 !== 0 )
-
+    return array.filter((value, index) => index % 2 !== 0)
 }
 
 //call function
@@ -106,7 +105,7 @@ const noVowels = (someString) => {
     let stringToArray = someString.split("");
     
     // return the original array without vowels using filter, and change new array back into string
-    return (stringToArray.filter(value => value !== "a" && value !== "e"  && value !== "i"  && value !== "o"  && value !== "u")).join("")
+    return (stringToArray.filter(value => value.toLowerCase() !== "a" && value.toLowerCase() !== "e"  && value.toLowerCase() !== "i"  && value.toLowerCase() !== "o"  && value.toLowerCase() !== "u")).join("")
     
 }
 
@@ -132,7 +131,7 @@ const checkForTypeAndVowels = (someMessage) => {
         let stringToArray = someMessage.split("");
         
         // return the original array without vowels using filter, and change new array back into string
-        return (stringToArray.filter(value => value !== "a" && value !== "e"  && value !== "i"  && value !== "o"  && value !== "u")).join("")
+        return (stringToArray.filter(value => value.toLowerCase() !== "a" && value.toLowerCase() !== "e"  && value.toLowerCase() !== "i"  && value.toLowerCase() !== "o"  && value.toLowerCase() !== "u")).join("")
     } else { //if not, display message
         return `${ someMessage } is not a string`
     }
